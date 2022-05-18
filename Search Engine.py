@@ -52,6 +52,7 @@ def search(event = None):
 
 
 def close_and_delete(event = None):
+    #Deletes the files that have been stored due to the searches
     for query, extension in previous_query.items():
         os.remove(query + extension)
     root.destroy()
